@@ -11,6 +11,6 @@
 9. Floyd-Warshall
 10. Knapsack Problem using DP
 11. Kruskal's
-12. Dijkstra'a
+12. Dijkstra's
 13. nQueen's
 14. Subset Sum
