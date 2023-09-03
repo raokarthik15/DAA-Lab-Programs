@@ -126,7 +126,7 @@ int main()
 
     //printf("No. of islands = %d\n",countIslands(AM));
     // dfs(AM, src);
-    iter=0;
+    // iter=0;
     dfsTraversal(AM,src);
     
     clock_t end = clock();

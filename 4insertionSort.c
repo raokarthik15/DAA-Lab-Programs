@@ -60,6 +60,7 @@ int main()
 
     clock_t end = clock();
     for(int i=0;i<length;i++)
+        // Format specifier: I64d = lld
         printf("%I64d\n",listOfNumbers[i]);
     timetaken = (double)(end - begin)/CLOCKS_PER_SEC;
     printf("Time taken = %lf seconds",timetaken);

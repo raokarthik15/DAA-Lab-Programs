@@ -48,7 +48,7 @@ int main()
             AM[i][j] == -1 ? AM[i][j] = 9999 : AM[i][j];
         }
     
-    printf("Enter source: ");
+    printf("Enter source(from 0): ");
     scanf("%d",&source);
 
     for(int i=0;i<n;i++) 
