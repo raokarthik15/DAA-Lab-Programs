@@ -39,6 +39,8 @@ void merge(int *IDlist, int low, int mid, int high)
             temp[i++] = IDlist[l++];
         else
             temp[i++] = IDlist[j++];
+        // Equivalent statement using ternary
+        // temp[i++] = IDlist[l] <= IDlist[j] ? IDlist[l++] : IDlist[j++];
     }
     while(j<=high)
         temp[i++]=IDlist[j++];

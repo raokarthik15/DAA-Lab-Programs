@@ -14,22 +14,22 @@ int count, w[10], d, x[10];
 void subset(int cs, int k, int r)
 {
     int i;
-    x[k] = 1;
+    x[k] = 1; // Consider the k'th element in the subset
     if ((cs + w[k]) == d)
-    {
+    { // Print the solution - subset which makes the required sum
         printf("\nSubset solution = %d\n", ++count);
         for (i = 0; i <= k; i++)
         {
-            if (x[i] == 1)
+            if (x[i] == 1) // Elements that are considered in the subset
                 printf("%d\n", w[i]);
         }
     }
-    else if (cs + w[k] + w[k + 1] <= d)
-        subset(cs + w[k], k + 1, r - w[k]);
+    else if (cs + w[k] < d) // If the sum is less than the required sum
+        subset(cs + w[k], k + 1, r - w[k]); // Add it to subset, k elements considered till now
     if ((cs + r - w[k] >= d) && (cs + w[k + 1]) <= d)
-    {
-        x[k] = 0;
-        subset(cs, k + 1, r - w[k]);
+    { // Check if there is a possibility of forming the required sum without including the current element
+        x[k] = 0; // Exclude the current element from the subset
+        subset(cs, k + 1, r - w[k]); // Proceed to the next element without including the current one
     }
 }
 

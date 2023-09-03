@@ -125,9 +125,9 @@ int main()
     clock_t begin = clock();
 
     //printf("No. of islands = %d\n",countIslands(AM));
-    // dfs(AM, src);
     // iter=0;
-    dfsTraversal(AM,src);
+    // dfsTraversal(AM,src);
+    dfs(AM, src);
     
     clock_t end = clock();
     timetaken = (double)(end - begin)/CLOCKS_PER_SEC;

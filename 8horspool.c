@@ -65,8 +65,10 @@ int main()
 
     printf("Enter text (character limit = 100):\n");
     gets(text);                 //TTATAGATCTCGTATTCTTTTATAGATCTCCTATTCTT
+    //fgets(text, TEXTLEN, stdin);
     printf("Enter pattern (character limit = 20):\n");
     gets(pattern);              //TCCTATTCTT
+    //fgets(pattern, PATLEN, stdin);
 
     clock_t begin = clock();
     comparisons = horspool(text,pattern);

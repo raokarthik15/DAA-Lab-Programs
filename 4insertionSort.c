@@ -32,7 +32,7 @@ void InsertionSort(long long* list, int len)
 {   
     long long phone;
     int j;
-    for(int i=0;i<len;i++){
+    for(int i=1;i<len;i++){
         phone=list[i];
         j=i-1;
         while(j>=0 && phone<list[j]){
